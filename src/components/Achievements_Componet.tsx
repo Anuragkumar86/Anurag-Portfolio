@@ -62,7 +62,8 @@ export default function AchievementsSection() {
   );
 
   return (
-    <div className="bg-gray-900 text-white mb-6 h-screen">
+    <div className="bg-slate-900 min-h-screen">
+    <div className="bg-slate-900 min-h-screen text-green-500 mb-6">
       <h2 className="text-3xl font-bold text-center mb-6 pt-5 text-yellow-600">⚡My Achievements</h2>
       
       <div className="relative mb-4 flex items-center">
@@ -97,6 +98,7 @@ export default function AchievementsSection() {
           </motion.a>
         ))}
       </div>
+    </div>
     </div>
   );
 }
