@@ -18,7 +18,7 @@ const Copyright: React.FC = () => {
           <a href="https://linkedin.com/in/anuragkumar86" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
             <FaLinkedin size={20} />
           </a>
-          <a href="https://twitter.com/yourusername" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
+          <a href="https://twitter.com/ANURAGYADAV86" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">
             <FaTwitter size={20} />
           </a>
           <a href="https://instagram.com/_anurag_yadav_86" target="_blank" rel="noopener noreferrer" className="hover:text-white transition">

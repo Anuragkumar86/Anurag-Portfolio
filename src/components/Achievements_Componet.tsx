@@ -1,8 +1,7 @@
 import { useState } from "react";
 import { Card, CardContent } from "./ui/card";  // If using ShadCN
 import { Input } from "./ui/input";
-
-import { motion } from "framer-motion";
+import { Link } from "react-router-dom";  // Import Link
 import { BadgeCheck, Award, Code, Search } from "lucide-react";
 import type { JSX } from "react";
 
@@ -23,7 +22,7 @@ const achievements: Achievement[] = [
     link: "https://www.hackerrank.com/profile/anuragkr8651",
   },
   {
-    id: 3,
+    id: 2,
     title: "HackerRank 4-star Badge (C)",
     description: "Achieved a silver badge and a 4-star ⭐ rating on HackerRank in C.",
     icon: <BadgeCheck className="text-green-500" size={28} />,
@@ -50,11 +49,9 @@ const achievements: Achievement[] = [
     icon: <Award className="text-blue-500" size={28} />,
     link: "/certificates",
   },
- 
 ];
 
 export default function AchievementsSection() {
-  // eslint-disable-next-line @typescript-eslint/no-unused-vars
   const [search, setSearch] = useState("");
 
   const filteredAchievements = achievements.filter((achievement) =>
@@ -62,7 +59,6 @@ export default function AchievementsSection() {
   );
 
   return (
-    <div className="bg-slate-900 min-h-screen">
     <div className="bg-slate-900 min-h-screen text-green-500 mb-6">
       <h2 className="text-3xl font-bold text-center mb-6 pt-5 text-yellow-600">⚡My Achievements</h2>
       
@@ -79,26 +75,37 @@ export default function AchievementsSection() {
       
       <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 bg-slate-900">
         {filteredAchievements.map((achievement) => (
-          <motion.a
-            key={achievement.id}
-            href={achievement.link}
-            target="_blank"
-            rel="noopener noreferrer"
-            whileHover={{ scale: 1.05 }}
-            whileTap={{ scale: 0.95 }}
-            className="block"
-          >
-            <Card className="bg-gray-800 border border-gray-700 m-5 p-4 h-28 rounded-xl flex items-center gap-4 hover:border-blue-500 transition-all">
-              {achievement.icon}
-              <CardContent className="p-0">
-                <h3 className="text-xl font-semibold">{achievement.title}</h3>
-                <p className="text-gray-400 text-sm">{achievement.description}</p>
-              </CardContent>
-            </Card>
-          </motion.a>
+          achievement.link?.startsWith("http") ? (
+            // External Links - Open in New Tab
+            <a 
+              key={achievement.id} 
+              href={achievement.link} 
+              target="_blank" 
+              rel="noopener noreferrer"
+              className="block"
+            >
+              <Card className="bg-gray-800 border border-gray-700 m-5 p-4 h-28 rounded-xl flex items-center gap-4 hover:border-blue-500 transition-all">
+                {achievement.icon}
+                <CardContent className="p-0">
+                  <h3 className="text-xl font-semibold">{achievement.title}</h3>
+                  <p className="text-gray-400 text-sm">{achievement.description}</p>
+                </CardContent>
+              </Card>
+            </a>
+          ) : (
+            // Internal Links - Use React Router's Link
+            <Link key={achievement.id} to={achievement.link ?? ""} className="block">
+              <Card className="bg-gray-800 border border-gray-700 m-5 p-4 h-28 rounded-xl flex items-center gap-4 hover:border-blue-500 transition-all">
+                {achievement.icon}
+                <CardContent className="p-0">
+                  <h3 className="text-xl font-semibold">{achievement.title}</h3>
+                  <p className="text-gray-400 text-sm">{achievement.description}</p>
+                </CardContent>
+              </Card>
+            </Link>
+          )
         ))}
       </div>
-    </div>
     </div>
   );
 }
