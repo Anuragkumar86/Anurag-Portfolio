@@ -26,24 +26,20 @@ const NavBar: React.FC = () => {
               </Link>
             </li>
             <li>
-              <a href="/about" className="hover:text-green-400 transition-all duration-300">
-                About
-              </a>
+            <Link to={"/about"} className="hover:text-green-400 transition-all duration-300"> About</Link>
+              
             </li>
             <li>
-              <a href="/project" className="hover:text-green-400 transition-all duration-300">
-                Projects
-              </a>
+            <Link to={"/project"} className="hover:text-green-400 transition-all duration-300"> Projects</Link>
+              
             </li>
             <li>
-              <a href="/contact" className="hover:text-green-400 transition-all duration-300">
-                Contact
-              </a>
+            <Link to={"/contact"} className="hover:text-green-400 transition-all duration-300"> Contact</Link>
+              
             </li>
             <li>
-              <a href="/achievement" className="hover:text-green-400 transition-all duration-300">
-                Achievement
-              </a>
+              <Link to={"/achievement"} className="hover:text-green-400 transition-all duration-300"> Achievement</Link>
+              
             </li>
           </ul>
           <Link to="/contact">
@@ -80,24 +76,24 @@ const NavBar: React.FC = () => {
               </Link>
             </li>
             <li>
-              <a href="/about" className="block hover:text-green-400 transition-all duration-300" onClick={() => setIsOpen(false)}>
+              <Link to={"/about"} className="block hover:text-green-400 transition-all duration-300" onClick={() => setIsOpen(false)}>
                 About
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/project" className="block hover:text-green-400 transition-all duration-300" onClick={() => setIsOpen(false)}>
+              <Link to={"/project"} className="block hover:text-green-400 transition-all duration-300" onClick={() => setIsOpen(false)}>
                 Projects
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/contact" className="block hover:text-green-400 transition-all duration-300" onClick={() => setIsOpen(false)}>
+              <Link to={"/contact"} className="block hover:text-green-400 transition-all duration-300" onClick={() => setIsOpen(false)}>
                 Contact
-              </a>
+              </Link>
             </li>
             <li>
-              <a href="/achievement" className="block hover:text-green-400 transition-all duration-300" onClick={() => setIsOpen(false)}>
+              <Link to={"/achievement"} className="block hover:text-green-400 transition-all duration-300" onClick={() => setIsOpen(false)}>
                 Achievements
-              </a>
+              </Link>
             </li>
           </ul>
           <Link to="/contact">

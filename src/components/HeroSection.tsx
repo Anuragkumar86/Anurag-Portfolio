@@ -3,6 +3,7 @@ import { FaGithub, FaLinkedin, FaInstagram } from "react-icons/fa";
 import profileImage from "../images/smallHair_c.jpg"; // Replace with your actual image path
 import { motion } from "framer-motion";
 import resume from "../../public/Anurag_Resume.pdf"
+import { Link } from "react-router-dom";
 const HeroSection: React.FC = () => {
   return (
     <section className="w-full h-screen flex flex-col md:flex-row items-center justify-center bg-gray-900 text-white px-6 md:px-20">
@@ -22,12 +23,12 @@ const HeroSection: React.FC = () => {
 
         {/* Call to Action Buttons */}
         <div className="flex space-x-4">
-          <a
-            href="/contact"
+          <Link
+            to={"/contact"}
             className="px-6 py-2 bg-green-500 text-lg font-semibold rounded-full shadow-lg hover:bg-green-700 transition-all duration-300 transform hover:scale-105"
           >
             Contact Me
-          </a>
+          </Link>
           <a
             href={resume}
             className="flex gap-2 px-6 py-2 bg-blue-500 text-lg font-semibold rounded-full shadow-lg hover:bg-blue-700 transition-all duration-300 transform hover:scale-105"

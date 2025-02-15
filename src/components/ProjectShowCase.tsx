@@ -4,6 +4,7 @@ import React from "react";
 import { FaGithub, FaExternalLinkAlt } from "react-icons/fa";
 import { Card, CardContent } from "./ui/card";
 import { Button } from "./ui/Button";
+import { Link } from "react-router-dom";
 
 interface Project {
   title: string;
@@ -57,18 +58,18 @@ const ProjectShowcase: React.FC = () => {
               </div>
               <div className="mt-4 flex gap-4">
                 {project.liveDemo && (
+                    <Link to={project.liveDemo}>
                   <Button variant="outline" size="sm" asChild>
-                    <a href={project.liveDemo} target="_blank" rel="noopener noreferrer">
                       <FaExternalLinkAlt className="mr-2" /> Live Demo
-                    </a>
                   </Button>
+                    </Link>
                 )}
                 {project.github && (
+                    <Link to={project.github}>
                   <Button variant="outline" size="sm" asChild>
-                    <a href={project.github} target="_blank" rel="noopener noreferrer">
                       <FaGithub className="mr-2" /> GitHub
-                    </a>
                   </Button>
+                    </Link>
                 )}
               </div>
             </CardContent>
