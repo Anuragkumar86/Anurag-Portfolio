@@ -1,4 +1,4 @@
-import { Link } from "react-router-dom"
+
 import cert1 from "../certificates/COURSERA_FOUNDATION_CYBERSECURITY.pdf"
 import cert2 from "../certificates/COURSERA_Play_It_Safe_Manage_Security_Risks.pdf"
 import cert3 from "../certificates/Coursera_Bits_Bytes.pdf"
