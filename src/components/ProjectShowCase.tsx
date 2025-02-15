@@ -43,7 +43,7 @@ const ProjectShowcase: React.FC = () => {
     <div className="bg-slate-900 min-h-screen">
     <div className="container mx-auto px-4 py-8 border-t-1 border-slate-700 bg-slate-900">
       <h2 className="text-3xl font-bold text-center mb-8 text-orange-500 shadow-2xl">🚀 Project Showcase</h2>
-      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-slate-900">
+      <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-slate-900 ">
         {projects.map((project, index) => (
           <Card key={index} className=" border-1 border-slate-400 p-4 hover:border-green-400 hover:scale-105 transition-shadow duration-300">
             <CardContent>

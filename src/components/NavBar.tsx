@@ -62,9 +62,9 @@ const NavBar: React.FC = () => {
         } transition-transform duration-500 ease-in-out`}
       >
         <div className="w-3/4 h-full bg-gray-900 shadow-lg p-6 flex flex-col space-y-6">
-          <h1 onClick={()=>{
-            navigate("/")
-          }} className="text-3xl font-extrabold tracking-wide text-green-400 cursor-pointer">Anurag Kumar</h1>
+          <Link to={"/"}>
+          <h1 className="text-3xl font-extrabold tracking-wide text-green-400 cursor-pointer">Anurag Kumar</h1>
+          </Link>
           <ul className="text-xl space-y-4">
             <li>
               <Link

@@ -1,7 +1,7 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
     darkMode: ['class', 'class'],
-    content: ["./src/**/*.{js,ts,jsx,tsx}"], // Ensure Tailwind scans your source files
+    content: ["./src/**/*.{js,ts,jsx,tsx}", "./index.html"], // Ensure Tailwind scans your source files
     theme: {
     	extend: {
     		animation: {

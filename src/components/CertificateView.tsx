@@ -33,9 +33,9 @@ const certificates = [
 
 export default function Certificates() {
   return (
-    <div className="p-6 bg-slate-900 h-screen">
+    <div className="p-6 bg-slate-900">
       <h2 className="text-3xl font-bold mb-4 text-orange-500 text-center">My All Certificates</h2>
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {certificates.map((cert, index) => (
           <a
             key={index}

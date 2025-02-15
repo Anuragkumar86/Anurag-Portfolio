@@ -69,13 +69,13 @@ const HeroSection: React.FC = () => {
       </div>
 
       {/* Right Section: Floating Image */}
-      <div className="mt-10 md:mt-0 md:w-1/2 flex justify-center relative">
+      <div className="mt-15 mb-38 md:mt-40 md:w-1/2 flex justify-center relative">
         <motion.div
-          className="w-70 h-70 md:w-90 md:h-90 rounded-full border-6 border-green-400 flex items-center justify-center overflow-hidden shadow-xl hover:border-yellow-500"
+          className=" w-60 h-60 md:w-90 md:h-90 rounded-full border-6 border-green-400 flex items-center justify-center overflow-hidden shadow-xl hover:border-yellow-500"
           animate={{ y: [0, -40, 0] }} // Moves up and down
           transition={{ duration: 4, repeat: Infinity, ease: "easeInOut" }}
         >
-          <img src={profileImage} alt="Profile" className="w-70 h-70 md:w-90 md:h-90 rounded-full" />
+          <img src={profileImage} alt="Profile" className="w-60 h-60 md:w-90 md:h-90 rounded-full" />
         </motion.div>
       </div>
     </section>
