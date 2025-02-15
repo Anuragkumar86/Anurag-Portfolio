@@ -40,7 +40,7 @@ const projects: Project[] = [
 
 const ProjectShowcase: React.FC = () => {
   return (
-    <div className="bg-slate-900 min-h-screen">
+    <div className="bg-slate-900">
     <div className="container mx-auto px-4 py-8 border-t-1 border-slate-700 bg-slate-900">
       <h2 className="text-3xl font-bold text-center mb-8 text-orange-500 shadow-2xl">🚀 Project Showcase</h2>
       <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6 bg-slate-900 ">
