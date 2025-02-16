@@ -19,8 +19,8 @@ const projects: Project[] = [
     title: "Portfolio Website",
     description: "A sleek and modern personal portfolio built with React and Tailwind CSS.",
     technologies: ["React", "Tailwind", "TypeScript"],
-    liveDemo: "/inprogress",
-    github: "/inprogress",
+    liveDemo: "https://anurag-portfolio-web.vercel.app/",
+    github: "https://github.com/Anuragkumar86/Anurag-Portfolio",
   },
   {
     title: "Simple Payment App",
@@ -58,14 +58,14 @@ const ProjectShowcase: React.FC = () => {
               </div>
               <div className="mt-4 flex gap-4">
                 {project.liveDemo && (
-                    <Link to={project.liveDemo}>
+                    <Link to={project.liveDemo} target="_blank">
                   <Button variant="outline" size="sm" asChild>
                       <FaExternalLinkAlt className="mr-2" /> Live Demo
                   </Button>
                     </Link>
                 )}
                 {project.github && (
-                    <Link to={project.github}>
+                    <Link to={project.github} target="_blank">
                   <Button variant="outline" size="sm" asChild>
                       <FaGithub className="mr-2" /> GitHub
                   </Button>
