@@ -13,29 +13,32 @@ const About: React.FC = () => {
             About Me
           </h2>
           <p className="text-lg text-gray-300 leading-relaxed">
-            Hello! I'm <span className="font-semibold text-green-300">Anurag Kumar</span>, a{" "}
-            <span className="font-semibold text-green-300">passionate Full-Stack Developer</span> with a strong foundation in{" "}
+            Hi, I'm <span className="font-semibold text-green-300">Anurag Kumar</span>, a{" "}
+            <span className="font-semibold text-green-300">passionate Full-Stack Developer</span> with an insatiable curiosity for technology and innovation. 
+            I specialize in{" "}
             <span className="text-green-300">
-              React, TypeScript, Tailwind CSS, Node.js, Java, C, HTML, CSS, and JavaScript.
-            </span>
+              React, TypeScript, Tailwind CSS, Node.js, Java, C, HTML, CSS, and JavaScript
+            </span>, and I love crafting seamless digital experiences.
           </p>
 
           <h3 className="text-2xl font-semibold text-green-400 mt-6">💡 My Philosophy</h3>
           <p className="mt-2 text-gray-400">
-            I believe that technology is a powerful tool for change, and I am committed to making a positive impact through innovative digital solutions.
+            I believe technology isn't just about code—it's about transforming ideas into reality and making a real-world impact.  
+            My goal is to build innovative solutions that simplify lives and push the boundaries of what's possible.
           </p>
 
           <h3 className="text-2xl font-semibold text-green-400 mt-6">🔥 What Drives Me?</h3>
           <ul className="mt-2 space-y-2 text-gray-300">
-            <li>✔ <span className="text-green-300 font-medium">Continuous Learning:</span> Always exploring new frameworks & tools.</li>
-            <li>✔ <span className="text-green-300 font-medium">Problem-Solving Mindset:</span> Breaking down complex challenges efficiently.</li>
-            <li>✔ <span className="text-green-300 font-medium">Freelancing & Entrepreneurship:</span> Helping businesses build powerful applications.</li>
-            <li>✔ <span className="text-green-300 font-medium">Collaboration & Innovation:</span> Building creative & impactful products.</li>
+            <li>✔ <span className="text-green-300 font-medium">Endless Curiosity:</span> Always exploring new technologies & frameworks.</li>
+            <li>✔ <span className="text-green-300 font-medium">Problem-Solving Mindset:</span> Thriving on challenges and tackling complex issues efficiently.</li>
+            <li>✔ <span className="text-green-300 font-medium">Building & Innovating:</span> Turning creative ideas into high-performance applications.</li>
+            <li>✔ <span className="text-green-300 font-medium">Collaboration & Growth:</span> Learning from experiences and contributing to the tech community.</li>
           </ul>
 
-          <h3 className="text-2xl font-semibold text-green-400 mt-6">🎯 My Vision</h3>
+          <h3 className="text-2xl font-semibold text-green-400 mt-6">🚀 My Vision</h3>
           <p className="mt-2 text-gray-400">
-            I aspire to leave a mark in the tech industry by contributing to groundbreaking projects that revolutionize the way people interact with technology.
+            My dream is to revolutionize the tech industry by developing cutting-edge applications that redefine user experiences.
+            With a strong passion for coding and innovation, I am on a mission to create meaningful and impactful digital solutions.
           </p>
         </div>
 

@@ -23,11 +23,11 @@ const projects: Project[] = [
     github: "https://github.com/Anuragkumar86/Anurag-Portfolio",
   },
   {
-    title: "Simple Payment App",
-    description: "A full-stack e-commerce platform with authentication and Stripe integration.",
-    technologies: ["React", "MongoDB", "Tailwind"],
-    liveDemo: "/inprogress",
-    github: "/inprogress",
+    title: "Weather-App",
+    description: "A simple and intuitive weather app that provides real-time weather updates and forecasts for any city.",
+    technologies: ["React", "Typescript", "Tailwind"],
+    liveDemo: "https://weather-app-frontend-self-psi.vercel.app/",
+    github: "https://github.com/Anuragkumar86/weather-app-frontend",
   },
   {
     title: "Medium-Blog",

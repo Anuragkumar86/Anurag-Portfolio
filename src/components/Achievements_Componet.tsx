@@ -37,7 +37,7 @@ const achievements: Achievement[] = [
   },
   {
     id: 4,
-    title: "LinkedIn 50+ Problems Solved",
+    title: "LeetCode 65+ Problems Solved",
     description: "Solved 50+ coding problems and shared insights on LinkedIn.",
     icon: <Code className="text-blue-500" size={28} />,
     link: "https://leetcode.com/u/anuragkr8651/",
