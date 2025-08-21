@@ -15,6 +15,15 @@ interface Project {
 }
 
 const projects: Project[] = [
+
+  {
+    title: "TradeNServe",
+    description: "A web application enabling local peer-to-peer buying, selling, and service provision with secure listings and real-time chat.",
+    technologies: ["Nextjs", "Tailwind", "prisma", "postgress", "Node.js", "Express.js"],
+    liveDemo: "https://trade-n-serve.vercel.app/",
+    github: "https://github.com/Anuragkumar86/TradeNServe",
+  },
+
   {
     title: "Portfolio Website",
     description: "A sleek and modern personal portfolio built with React and Tailwind CSS.",
@@ -29,13 +38,7 @@ const projects: Project[] = [
     liveDemo: "https://weather-app-frontend-self-psi.vercel.app/",
     github: "https://github.com/Anuragkumar86/weather-app-frontend",
   },
-  {
-    title: "Medium-Blog",
-    description: "An AI-powered chatbot using OpenAI API for real-time conversation.",
-    technologies: ["React", "Tailwind", "prisma", "postgress"],
-    liveDemo: "/inprogress",
-    github: "/inprogress",
-  },
+  
 ];
 
 const ProjectShowcase: React.FC = () => {
